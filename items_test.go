@@ -314,7 +314,7 @@ func TestItems_List(t *testing.T) {
 	}
 
 	expected := []Item{
-		Item{
+		{
 			AffiliateURL:       `http://www.dmm.co.jp/mono/dvd/-/detail/=/cid=juy553/affiliate-990`,
 			AffiliateURLMobile: `http://sp.dmm.co.jp/mono/detail/index/shop/dvd/cid/juy553/affiliate-990`,
 			CategoryName:       `DVD通販`,
@@ -328,72 +328,72 @@ func TestItems_List(t *testing.T) {
 				Small: `https://pics.dmm.co.jp/mono/movie/adult/juy553/juy553ps.jpg`,
 			},
 			ItemInfo: map[string][]ItemComponent{
-				"actress": []ItemComponent{
-					ItemComponent{
+				"actress": {
+					{
 						ID:   generic.MustString(1046150),
 						Name: `壇えみ`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("1046150_ruby"),
 						Name: `だんえみ`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("1046150_classify"),
 						Name: `av`,
 					},
 				},
-				"genre": []ItemComponent{
-					ItemComponent{
+				"genre": {
+					{
 						ID:   generic.MustString("6102"),
 						Name: `サンプル動画`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("6004"),
 						Name: `デジモ`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("4025"),
 						Name: `単体作品`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("1032"),
 						Name: `お母さん`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("2001"),
 						Name: `巨乳`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("1039"),
 						Name: `人妻`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("4111"),
 						Name: `寝取り・寝取られ`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("1014"),
 						Name: `熟女`,
 					},
 				},
-				"director": []ItemComponent{
-					ItemComponent{
+				"director": {
+					{
 						ID:   generic.MustString("107546"),
 						Name: `豆沢豆太郎`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString("107546_ruby"),
 						Name: `まめざわまめたろう`,
 					},
 				},
-				"label": []ItemComponent{
-					ItemComponent{
+				"label": {
+					{
 						ID:   generic.MustString("2931"),
 						Name: `Madonna`,
 					},
 				},
-				"maker": []ItemComponent{
-					ItemComponent{
+				"maker": {
+					{
 						ID:   generic.MustString("2661"),
 						Name: `マドンナ`,
 					},
@@ -430,7 +430,7 @@ func TestItems_List(t *testing.T) {
 			URLMobile:   `http://sp.dmm.co.jp/mono/detail/index/shop/dvd/cid/juy553/`,
 			Volume:      `120`,
 		},
-		Item{
+		{
 			AffiliateURL:       `http://www.dmm.co.jp/digital/videoa/-/detail/=/cid=1hawa00124/affiliate-990`,
 			AffiliateURLMobile: `http://www.dmm.co.jp/digital/videoa/-/detail/=/cid=1hawa00124/affiliate-990`,
 			CategoryName:       `ビデオ (動画)`,
@@ -446,64 +446,64 @@ func TestItems_List(t *testing.T) {
 			},
 			ISBN: ``,
 			ItemInfo: map[string][]ItemComponent{
-				"director": []ItemComponent{
-					ItemComponent{
+				"director": {
+					{
 						ID:   generic.MustString(102777),
 						Name: `長瀬ハワイ`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(`102777_ruby`),
 						Name: `ながせはわい`,
 					},
 				},
-				"genre": []ItemComponent{
-					ItemComponent{
+				"genre": {
+					{
 						ID:   generic.MustString(4007),
 						Name: `企画`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(1039),
 						Name: `人妻`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(4024),
 						Name: `素人`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(5009),
 						Name: `ごっくん`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(5001),
 						Name: `中出し`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(5068),
 						Name: `イラマチオ`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(6012),
 						Name: `4時間以上作品`,
 					},
-					ItemComponent{
+					{
 						ID:   generic.MustString(6533),
 						Name: `ハイビジョン`,
 					},
 				},
-				"label": []ItemComponent{
-					ItemComponent{
+				"label": {
+					{
 						ID:   generic.MustString(24342),
 						Name: `コスモス映像（ソフトオンデマンド）`,
 					},
 				},
-				"maker": []ItemComponent{
-					ItemComponent{
+				"maker": {
+					{
 						ID:   generic.MustString(46115),
 						Name: `コスモス映像`,
 					},
 				},
-				"series": []ItemComponent{
-					ItemComponent{
+				"series": {
+					{
 						ID:   generic.MustString(211038),
 						Name: `夫に内緒で他人棒SEX`,
 					},
@@ -513,23 +513,23 @@ func TestItems_List(t *testing.T) {
 				Price: `500~`,
 				Deliveries: Deliveries{
 					Delivery: []Delivery{
-						Delivery{
+						{
 							Type:  `stream`,
 							Price: `500`,
 						},
-						Delivery{
+						{
 							Type:  `download`,
 							Price: `980`,
 						},
-						Delivery{
+						{
 							Type:  `hd`,
 							Price: `1480`,
 						},
-						Delivery{
+						{
 							Type:  `androiddl`,
 							Price: `980`,
 						},
-						Delivery{
+						{
 							Type:  `iosdl`,
 							Price: `980`,
 						},
@@ -645,72 +645,72 @@ func TestItems_First(t *testing.T) {
 			Small: `https://pics.dmm.co.jp/mono/movie/adult/juy553/juy553ps.jpg`,
 		},
 		ItemInfo: map[string][]ItemComponent{
-			"actress": []ItemComponent{
-				ItemComponent{
+			"actress": {
+				{
 					ID:   generic.MustString(1046150),
 					Name: `壇えみ`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("1046150_ruby"),
 					Name: `だんえみ`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("1046150_classify"),
 					Name: `av`,
 				},
 			},
-			"genre": []ItemComponent{
-				ItemComponent{
+			"genre": {
+				{
 					ID:   generic.MustString("6102"),
 					Name: `サンプル動画`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("6004"),
 					Name: `デジモ`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("4025"),
 					Name: `単体作品`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("1032"),
 					Name: `お母さん`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("2001"),
 					Name: `巨乳`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("1039"),
 					Name: `人妻`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("4111"),
 					Name: `寝取り・寝取られ`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("1014"),
 					Name: `熟女`,
 				},
 			},
-			"director": []ItemComponent{
-				ItemComponent{
+			"director": {
+				{
 					ID:   generic.MustString("107546"),
 					Name: `豆沢豆太郎`,
 				},
-				ItemComponent{
+				{
 					ID:   generic.MustString("107546_ruby"),
 					Name: `まめざわまめたろう`,
 				},
 			},
-			"label": []ItemComponent{
-				ItemComponent{
+			"label": {
+				{
 					ID:   generic.MustString("2931"),
 					Name: `Madonna`,
 				},
 			},
-			"maker": []ItemComponent{
-				ItemComponent{
+			"maker": {
+				{
 					ID:   generic.MustString("2661"),
 					Name: `マドンナ`,
 				},

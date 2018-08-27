@@ -104,7 +104,7 @@ func TestGenres_List(t *testing.T) {
 	}
 
 	expected := []Genre{
-		Genre{
+		{
 			GenreID:     `1034`,
 			Name:        `ギャル`,
 			Ruby:        `ぎゃる`,
@@ -117,7 +117,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `6017`,
 			Name:        `ギリモザ`,
 			Ruby:        `ぎりもざ`,
@@ -130,7 +130,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `5069`,
 			Name:        `くすぐり`,
 			Ruby:        `くすぐり`,
@@ -143,7 +143,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `5007`,
 			Name:        `クスコ`,
 			Ruby:        `くすこ`,
@@ -156,7 +156,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `1075`,
 			Name:        `くノ一`,
 			Ruby:        `くのいち`,
@@ -169,7 +169,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `4033`,
 			Name:        `クラシック`,
 			Ruby:        `くらしっく`,
@@ -182,7 +182,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `38`,
 			Name:        `クンニ`,
 			Ruby:        `くんに`,
@@ -195,7 +195,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `4060`,
 			Name:        `ゲイ・ホモ`,
 			Ruby:        `げいほも`,
@@ -208,7 +208,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `6151`,
 			Name:        `ゲロ`,
 			Ruby:        `げろ`,
@@ -221,7 +221,7 @@ func TestGenres_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Genre{
+		{
 			GenreID:     `4138`,
 			Name:        `原作コラボ`,
 			Ruby:        `げんさくこらぼ`,
