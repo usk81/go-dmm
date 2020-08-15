@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/usk81/generic"
+	"github.com/usk81/generic/v2"
 )
 
 const seriesBasePath = `affiliate/v3/SeriesSearch`

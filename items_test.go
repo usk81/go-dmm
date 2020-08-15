@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/usk81/generic"
+	"github.com/usk81/generic/v2"
 )
 
 const testItemsRequest = `

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/usk81/generic"
+	"github.com/usk81/generic/v2"
 )
 
 // AuthorBasePath is used as the base url path to request DMM author API
