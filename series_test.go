@@ -104,7 +104,7 @@ func TestSeries_List(t *testing.T) {
 	}
 
 	expected := []Series{
-		Series{
+		{
 			SeriesID:    `205129`,
 			Name:        `アイドル候補生騙し撮り過激映像`,
 			Ruby:        `あいどるこうほせいだましとりかげきえいぞう`,
@@ -117,7 +117,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `441`,
 			Name:        `アイドルザーメン`,
 			Ruby:        `あいどるざーめん`,
@@ -130,7 +130,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `208920`,
 			Name:        `IDOL SEX 8時間`,
 			Ruby:        `あいどるせっくす8じかん`,
@@ -143,7 +143,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `203306`,
 			Name:        `アイドル潜入捜査官`,
 			Ruby:        `あいどるせんにゅうそうさかん`,
@@ -156,7 +156,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `202904`,
 			Name:        `アイドルソープ`,
 			Ruby:        `あいどるそーぷ`,
@@ -169,7 +169,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `4039`,
 			Name:        `アイドル宅配便`,
 			Ruby:        `あいどるたっきゅうびん`,
@@ -182,7 +182,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `61358`,
 			Name:        `アイドル魂`,
 			Ruby:        `あいどるだましい`,
@@ -195,7 +195,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `219168`,
 			Name:        `アイドルになるのを夢見る女子校生`,
 			Ruby:        `あいどるになるのをゆめみるじょしこうせい`,
@@ -208,7 +208,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `75005`,
 			Name:        `アイドル寝起き襲撃`,
 			Ruby:        `あいどるねおきしゅうげき`,
@@ -221,7 +221,7 @@ func TestSeries_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Series{
+		{
 			SeriesID:    `78651`,
 			Name:        `アイドル○○の童貞筆おろし`,
 			Ruby:        `あいどるまるまるのどうていふでおろし`,

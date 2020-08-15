@@ -68,7 +68,7 @@ func TestAuthors_List(t *testing.T) {
 	}
 
 	expected := []Author{
-		Author{
+		{
 			AuthorID:    "217780",
 			Name:        "安藤美華代",
 			Ruby:        "あんどうみかよ",
@@ -80,7 +80,7 @@ func TestAuthors_List(t *testing.T) {
 			FloorName:   "本・コミック",
 			FloorCode:   "book",
 		},
-		Author{
+		{
 			AuthorID:    "217781",
 			Name:        "安東みきえ",
 			Ruby:        "あんどうみきえ",
@@ -92,7 +92,7 @@ func TestAuthors_List(t *testing.T) {
 			FloorName:   "本・コミック",
 			FloorCode:   "book",
 		},
-		Author{
+		{
 			AuthorID:    "180054",
 			Name:        "安東実",
 			Ruby:        "あんどうみのる",

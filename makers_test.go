@@ -104,7 +104,7 @@ func TestMakers_List(t *testing.T) {
 	}
 
 	expected := []Maker{
-		Maker{
+		{
 			MakerID:     `45313`,
 			Name:        `アップス`,
 			Ruby:        `あっぷす`,
@@ -117,7 +117,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `46068`,
 			Name:        `アップソン`,
 			Ruby:        `あっぷそん`,
@@ -130,7 +130,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `4616`,
 			Name:        `アップダウン`,
 			Ruby:        `あっぷだうん`,
@@ -143,7 +143,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `1229`,
 			Name:        `アップ ユーピー企画`,
 			Ruby:        `あっぷゆーぴーきかく`,
@@ -156,7 +156,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `4709`,
 			Name:        `アップル企画`,
 			Ruby:        `あっぷるきかく`,
@@ -169,7 +169,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `45664`,
 			Name:        `apple Club`,
 			Ruby:        `あっぷるくらぶ`,
@@ -182,7 +182,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `5090`,
 			Name:        `あっぷるぷる`,
 			Ruby:        `あっぷるぷる`,
@@ -195,7 +195,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `40160`,
 			Name:        `アテナ映像`,
 			Ruby:        `あてなえいぞう`,
@@ -208,7 +208,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `46487`,
 			Name:        `アテナレジェンド`,
 			Ruby:        `あてなれじぇんど`,
@@ -221,7 +221,7 @@ func TestMakers_List(t *testing.T) {
 			FloorName:   `ビデオ`,
 			FloorCode:   `videoa`,
 		},
-		Maker{
+		{
 			MakerID:     `1902`,
 			Name:        `アディクト`,
 			Ruby:        `あでぃくと`,

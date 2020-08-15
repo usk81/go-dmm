@@ -173,66 +173,66 @@ func TestFloors_List(t *testing.T) {
 	}
 
 	expected := []Site{
-		Site{
+		{
 			Name: `DMM.com（一般）`,
 			Code: `DMM.com`,
 			Services: []Service{
-				Service{
+				{
 					Name: `AKB48グループ`,
 					Code: `lod`,
 					Floor: []Floor{
-						Floor{
+						{
 							ID:   `1`,
 							Name: `AKB48`,
 							Code: `akb48`,
 						},
-						Floor{
+						{
 							ID:   `2`,
 							Name: `SKE48`,
 							Code: `ske48`,
 						},
-						Floor{
+						{
 							ID:   `3`,
 							Name: `NMB48`,
 							Code: `nmb48`,
 						},
-						Floor{
+						{
 							ID:   `4`,
 							Name: `HKT48`,
 							Code: `hkt48`,
 						},
-						Floor{
+						{
 							ID:   `5`,
 							Name: `NGT48`,
 							Code: `ngt48`,
 						},
-						Floor{
+						{
 							ID:   `6`,
 							Name: `REVIVAL!! ON DEMAND`,
 							Code: `rod`,
 						},
 					},
 				},
-				Service{
+				{
 					Name: `動画`,
 					Code: `digital`,
 					Floor: []Floor{
-						Floor{
+						{
 							ID:   `90`,
 							Name: `一般動画`,
 							Code: `videomarket`,
 						},
-						Floor{
+						{
 							ID:   `9`,
 							Name: `アイドル`,
 							Code: `idol`,
 						},
-						Floor{
+						{
 							ID:   `10`,
 							Name: `舞台`,
 							Code: `cinema`,
 						},
-						Floor{
+						{
 							ID:   `12`,
 							Name: `VR`,
 							Code: `video`,
@@ -241,66 +241,66 @@ func TestFloors_List(t *testing.T) {
 				},
 			},
 		},
-		Site{
+		{
 			Name: `DMM.R18（アダルト）`,
 			Code: `DMM.R18`,
 			Services: []Service{
-				Service{
+				{
 					Name: `動画`,
 					Code: `digital`,
 					Floor: []Floor{
-						Floor{
+						{
 							ID:   `43`,
 							Name: `ビデオ`,
 							Code: `videoa`,
 						},
-						Floor{
+						{
 							ID:   `44`,
 							Name: `素人`,
 							Code: `videoc`,
 						},
-						Floor{
+						{
 							ID:   `45`,
 							Name: `成人映画`,
 							Code: `nikkatsu`,
 						},
-						Floor{
+						{
 							ID:   `46`,
 							Name: `アニメ動画`,
 							Code: `anime`,
 						},
 					},
 				},
-				Service{
+				{
 					Name: `通販`,
 					Code: `mono`,
 					Floor: []Floor{
-						Floor{
+						{
 							ID:   `74`,
 							Name: `DVD`,
 							Code: `dvd`,
 						},
-						Floor{
+						{
 							ID:   `75`,
 							Name: `大人のおもちゃ`,
 							Code: `goods`,
 						},
-						Floor{
+						{
 							ID:   `76`,
 							Name: `アニメ`,
 							Code: `anime`,
 						},
-						Floor{
+						{
 							ID:   `77`,
 							Name: `PCゲーム`,
 							Code: `pcgame`,
 						},
-						Floor{
+						{
 							ID:   `78`,
 							Name: `ブック`,
 							Code: `book`,
 						},
-						Floor{
+						{
 							ID:   `79`,
 							Name: `同人`,
 							Code: `doujin`,
@@ -333,62 +333,62 @@ func TestFloors_First(t *testing.T) {
 		Name: `DMM.com（一般）`,
 		Code: `DMM.com`,
 		Services: []Service{
-			Service{
+			{
 				Name: `AKB48グループ`,
 				Code: `lod`,
 				Floor: []Floor{
-					Floor{
+					{
 						ID:   `1`,
 						Name: `AKB48`,
 						Code: `akb48`,
 					},
-					Floor{
+					{
 						ID:   `2`,
 						Name: `SKE48`,
 						Code: `ske48`,
 					},
-					Floor{
+					{
 						ID:   `3`,
 						Name: `NMB48`,
 						Code: `nmb48`,
 					},
-					Floor{
+					{
 						ID:   `4`,
 						Name: `HKT48`,
 						Code: `hkt48`,
 					},
-					Floor{
+					{
 						ID:   `5`,
 						Name: `NGT48`,
 						Code: `ngt48`,
 					},
-					Floor{
+					{
 						ID:   `6`,
 						Name: `REVIVAL!! ON DEMAND`,
 						Code: `rod`,
 					},
 				},
 			},
-			Service{
+			{
 				Name: `動画`,
 				Code: `digital`,
 				Floor: []Floor{
-					Floor{
+					{
 						ID:   `90`,
 						Name: `一般動画`,
 						Code: `videomarket`,
 					},
-					Floor{
+					{
 						ID:   `9`,
 						Name: `アイドル`,
 						Code: `idol`,
 					},
-					Floor{
+					{
 						ID:   `10`,
 						Name: `舞台`,
 						Code: `cinema`,
 					},
-					Floor{
+					{
 						ID:   `12`,
 						Name: `VR`,
 						Code: `video`,

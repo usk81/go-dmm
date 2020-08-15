@@ -91,7 +91,7 @@ func TestActresses_List(t *testing.T) {
 	}
 
 	expected := []Actress{
-		Actress{
+		{
 			ID:          `26617`,
 			Name:        `愛内あみ`,
 			Ruby:        `あいうちあみ`,
@@ -116,7 +116,7 @@ func TestActresses_List(t *testing.T) {
 				Rental:  `http://www.dmm.co.jp/rental/ppr/-/list/=/article=actress/id=26617/affiliate-990`,
 			},
 		},
-		Actress{
+		{
 			ID:   `1038122`,
 			Name: `愛内陽菜`,
 			Ruby: `あいうちはるな`,
