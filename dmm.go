@@ -15,6 +15,10 @@ import (
 )
 
 const (
+	// SiteGeneral is the code as DMM.com
+	SiteGeneral = "DMM.com"
+	// SiteAdult is the code as DMM.co.jp (FANZA)
+	SiteAdult      = "DMM.R18"
 	libraryVersion = "0.0.1"
 	defaultBaseURL = "https://api.dmm.com/"
 	userAgent      = "go-dmm/" + libraryVersion

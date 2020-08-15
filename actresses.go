@@ -86,6 +86,7 @@ type ActressOptions struct {
 	LteHeight   int    `json:"lte_height" url:"lte_height,omitempty"`
 	GteBirthday string `json:"gte_birthday" url:"gte_birthday,omitempty"`
 	LteBirthday string `json:"lte_birthday" url:"lte_birthday,omitempty"`
+	Sort        string `json:"sort" url:"sort,omitempty"`
 	Hits        int    `json:"hits" url:"hits,omitempty"`
 	Offset      int    `json:"offset" url:"offset,omitempty"`
 	Output      string `json:"output" url:"output,omitempty"`
@@ -108,6 +109,7 @@ type internalActressOptions struct {
 	LteHeight   generic.Int `json:"lte_height"`
 	GteBirthday string      `json:"gte_birthday"`
 	LteBirthday string      `json:"lte_birthday"`
+	Sort        string      `json:"sort"`
 	Hits        generic.Int `json:"hits"`
 	Offset      generic.Int `json:"offset"`
 	Output      string      `json:"output"`
