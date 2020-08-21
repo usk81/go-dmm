@@ -1,14 +1,13 @@
+github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/google/go-querystring v1.0.0 h1:Xkwi/a1rcvNg1PPYe5vI8GbeBY/jrVuDX5ASuANWTrk=
 github.com/google/go-querystring v1.0.0/go.mod h1:odCYkC5MyYFN7vkCjXpyrEuKhc/BUO6wN/zVPAxq5ck=
 github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0SNc=
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
+github.com/stretchr/testify v1.3.0 h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0Q=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
-github.com/usk81/generic v1.1.0 h1:zU6Vh06VTidogcVeuiAoQO9dFnWNm4baL5djQBegVzs=
-github.com/usk81/generic v1.1.0/go.mod h1:Zh37Sg9Nm31cmotO0QzOfGekMl3fd6x+dKi/p0MR/VI=
-github.com/usk81/generic v2.1.0+incompatible h1:yb1Z/GdRdIMnjacCdubEoZpKn053/WUpXbGgzU4YFtg=
-github.com/usk81/generic v2.1.0+incompatible/go.mod h1:Zh37Sg9Nm31cmotO0QzOfGekMl3fd6x+dKi/p0MR/VI=
 github.com/usk81/generic/v2 v2.2.1 h1:5WEuO7BC5ifSs602Grv7VNQYsxlwClYfmnHtB80K5Pk=
 github.com/usk81/generic/v2 v2.2.1/go.mod h1:0hgKbwcKPzDHsnzoHGULpJjo8Yf5kvRNq8n148cjASA=
