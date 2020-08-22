@@ -9,7 +9,6 @@ import (
 	"net/http"
 	"net/url"
 	"reflect"
-	"strconv"
 
 	"github.com/google/go-querystring/query"
 )
@@ -178,11 +177,7 @@ func (r *Response) IsLast() bool {
 	if r.ResultCount == 0 {
 		return true
 	}
-	h := r.Parameters.GetHits()
-	if r.ResultCount < h {
-		return true
-	}
-	return false
+	return r.ResultCount < r.Parameters.GetHits()
 }
 
 // NewRequest creates an API request. A relative URL can be provided in urlStr, which will be resolved to the
@@ -260,7 +255,9 @@ func CheckResponse(r *http.Response) error {
 	errorResponse := &ErrorResponse{Response: r}
 	data, err := ioutil.ReadAll(r.Body)
 	if err == nil && len(data) > 0 {
-		json.Unmarshal(data, errorResponse)
+		if err = json.Unmarshal(data, errorResponse); err != nil {
+			return err
+		}
 	}
 	return errorResponse
 }
@@ -300,13 +297,4 @@ func nextOffset(l, o int) (result int, err error) {
 		return 0, fmt.Errorf("limit is empty")
 	}
 	return o + l, nil
-}
-
-func atoi(s string, df int) (i int, err error) {
-	if s == "" {
-		i = df
-	} else if i, err = strconv.Atoi(s); err != nil {
-		return
-	}
-	return
 }
