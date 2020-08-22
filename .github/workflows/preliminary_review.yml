@@ -1,6 +1,6 @@
 name: preliminary review
 on:
-  pull_request:
+  pull_request
 
 env:
   GO111MODULE: on
