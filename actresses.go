@@ -166,6 +166,9 @@ func (s *ActressesServiceOp) Unmarshal(ctx context.Context, opt *ActressOptions,
 	if err != nil {
 		return r, err
 	}
+	if len(res.Actress) == 0 {
+		return r, err
+	}
 	if err = json.Unmarshal(res.Actress, out); err != nil {
 		return r, err
 	}
