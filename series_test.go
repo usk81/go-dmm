@@ -9,7 +9,8 @@ import (
 	"github.com/kylelemons/godebug/pretty"
 )
 
-const testSeriesRequest = `
+const (
+	testSeriesRequest = `
 {
 	"request": {
 		"parameters": {
@@ -88,6 +89,35 @@ const testSeriesRequest = `
 		]
 	}
 }`
+
+	testSeriesNilRequest = `
+{
+	"request": {
+		"parameters": {
+			"Series": null,
+			"api_id": "sample",
+			"affiliate_id": "affiliate-990",
+			"floor_id": "43",
+			"hits": "10",
+			"offset": "100",
+			"output": "json"
+		}
+	},
+	"result": {
+		"status": "200",
+		"result_count": 0,
+		"total_count": "0",
+		"first_position": 100,
+		"site_name": "FANZA（アダルト）",
+		"site_code": "FANZA",
+		"service_name": "動画",
+		"service_code": "digital",
+		"floor_id": "43",
+		"floor_name": "ビデオ",
+		"floor_code": "videoa"
+	}
+}`
+)
 
 func TestSeries_List(t *testing.T) {
 	setup()
@@ -252,6 +282,52 @@ func TestSeries_List(t *testing.T) {
 		},
 		ResultCount:   10,
 		TotalCount:    30828,
+		FirstPosition: 100,
+	}
+	if !reflect.DeepEqual(re.Parameters, r.Parameters) {
+		t.Errorf("Response.Parameters is not correct; %s", pretty.Compare(r.Parameters, re.Parameters))
+	}
+	if r.ResultCount != re.ResultCount {
+		t.Errorf("Response.ResultCount returned %+v, expected %+v", r.ResultCount, re.ResultCount)
+	}
+	if r.TotalCount != re.TotalCount {
+		t.Errorf("Response.TotalCount returned %+v, expected %+v", r.TotalCount, re.TotalCount)
+	}
+	if r.FirstPosition != re.FirstPosition {
+		t.Errorf("Response.FirstPosition returned %+v, expected %+v", r.FirstPosition, re.FirstPosition)
+	}
+}
+
+func TestSeries_List_Nil(t *testing.T) {
+	setup()
+	defer teardown()
+
+	mux.HandleFunc(`/`+seriesBasePath, func(w http.ResponseWriter, r *http.Request) {
+		testMethod(t, r, http.MethodGet)
+		fmt.Fprint(w, testSeriesNilRequest)
+	})
+
+	actual, r, err := client.Series.List(ctx, nil)
+	if err != nil {
+		t.Errorf("Series.List returned error: %v", err)
+	}
+	if actual != nil {
+		t.Errorf("Series.List is not correct; %s", pretty.Compare(actual, nil))
+	}
+
+	re := Response{
+		Parameters: &SeriesOptions{
+			APIID:       `sample`,
+			AffiliateID: `affiliate-990`,
+			FloorID:     `43`,
+			Initial:     ``,
+			Hits:        10,
+			Offset:      100,
+			Output:      `json`,
+			Callback:    ``,
+		},
+		ResultCount:   0,
+		TotalCount:    0,
 		FirstPosition: 100,
 	}
 	if !reflect.DeepEqual(re.Parameters, r.Parameters) {

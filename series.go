@@ -130,6 +130,9 @@ func (s *SeriesServiceOp) List(ctx context.Context, opt *SeriesOptions) ([]Serie
 	if err != nil {
 		return nil, r, err
 	}
+	if res.Series == nil {
+		return nil, r, nil
+	}
 	var ss []Series
 	if err = json.Unmarshal(res.Series, &ss); err != nil {
 		return nil, r, err
