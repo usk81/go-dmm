@@ -116,6 +116,9 @@ func (s *FloorsServiceOp) Unmarshal(ctx context.Context, opt *FloorOptions, out 
 	if err != nil {
 		return r, err
 	}
+	if res.Site == nil {
+		return r, nil
+	}
 	if err = json.Unmarshal(res.Site, out); err != nil {
 		return r, err
 	}

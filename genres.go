@@ -159,6 +159,9 @@ func (s *GenresServiceOp) Unmarshal(ctx context.Context, opt *GenreOptions, out 
 	if err != nil {
 		return r, err
 	}
+	if res.Genre == nil {
+		return r, nil
+	}
 	if err = json.Unmarshal(res.Genre, out); err != nil {
 		return r, err
 	}

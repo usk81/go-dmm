@@ -159,6 +159,9 @@ func (s *MakersServiceOp) Unmarshal(ctx context.Context, opt *MakerOptions, out 
 	if err != nil {
 		return r, err
 	}
+	if res.Maker == nil {
+		return r, nil
+	}
 	if err = json.Unmarshal(res.Maker, out); err != nil {
 		return r, err
 	}
