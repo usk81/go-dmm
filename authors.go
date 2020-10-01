@@ -159,6 +159,9 @@ func (s *AuthorsServiceOp) Unmarshal(ctx context.Context, opt *AuthorOptions, ou
 	if err != nil {
 		return r, err
 	}
+	if res.Author == nil {
+		return r, nil
+	}
 	if err = json.Unmarshal(res.Author, out); err != nil {
 		return r, err
 	}

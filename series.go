@@ -159,6 +159,9 @@ func (s *SeriesServiceOp) Unmarshal(ctx context.Context, opt *SeriesOptions, out
 	if err != nil {
 		return r, err
 	}
+	if res.Series == nil {
+		return r, nil
+	}
 	if err = json.Unmarshal(res.Series, out); err != nil {
 		return r, err
 	}

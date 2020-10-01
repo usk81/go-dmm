@@ -241,6 +241,9 @@ func (s *ItemsServiceOp) Unmarshal(ctx context.Context, opt *ItemOptions, out in
 	if err != nil {
 		return r, err
 	}
+	if res.Items == nil {
+		return r, nil
+	}
 	if err = json.Unmarshal(res.Items, out); err != nil {
 		return r, err
 	}
